@@ -14,5 +14,5 @@ app.get('/demo', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log('Server has started on port 3000')
+    app.listen(process.env.PORT, process.env.IP, () => console.log('Server has started!'));
 })
